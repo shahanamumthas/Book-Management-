@@ -1,10 +1,17 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'crud-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  // animations:[
+  //   slideInAnimation
+  // ]
 })
 export class AppComponent {
   title = 'crud-app';
+
+  constructor(){}
+
+ 
 }

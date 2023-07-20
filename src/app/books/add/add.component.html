@@ -1,0 +1,36 @@
+<div class="container ">
+    <legend>Add a new Book</legend>
+
+    <form>
+        <div class="mb-3">
+            <mat-form-field>
+                <mat-label>Title</mat-label>
+                <input matInput type="text" [(ngModel)]="bookForm.title" name="title" id="txttitle" #title='ngModel' >
+    
+            </mat-form-field>
+        </div>
+        <div class="mb-3">
+            <mat-form-field>
+                <mat-label>Author</mat-label>
+                <input matInput type="text" [(ngModel)]="bookForm.author" name="author" id="txtauthor" #author='ngModel'>
+    
+            </mat-form-field>
+        </div>
+        <div class="mb-3">
+            <mat-form-field>
+                <mat-label>Cost</mat-label>
+                <input matInput type="text" [(ngModel)]="bookForm.cost" name="cost" id="txtcost" #cost='ngModel'>
+    
+            </mat-form-field>
+        </div>
+        
+        <div class="mb-3">
+            <mat-form-field>
+                <mat-label>Description</mat-label>
+                <input matInput type="text" [(ngModel)]="bookForm.description" name="description" id="txtdescription" #description='ngModel' >
+    
+            </mat-form-field>
+        </div>
+        <button type="submit" class="btn btn-primary" (click)="save()">Create</button>
+    </form>
+</div>

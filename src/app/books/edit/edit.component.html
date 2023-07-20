@@ -1,0 +1,35 @@
+
+ <div class="container">
+    <legend>Edit Book</legend>
+  
+    <div class="mb-3">
+      <mat-form-field>
+        <mat-label>Name of The Book</mat-label>
+        <input matInput type="text" [(ngModel)]="bookForm.title" id="txtname">
+      </mat-form-field>
+    </div>
+  
+    <div class="mb-3">
+      <mat-form-field>
+        <mat-label>Author</mat-label>
+        <input matInput type="text" [(ngModel)]="bookForm.author" id="txtauthor">
+      </mat-form-field>
+    </div>
+  
+    <div class="mb-3">
+      <mat-form-field>
+        <mat-label>Cost</mat-label>
+        <input matInput type="number" [(ngModel)]="bookForm.cost" id="txtcost" >
+      </mat-form-field>
+    </div>
+
+    <div class="mb-3">
+      <mat-form-field>
+        <mat-label>Description</mat-label>
+        <input matInput type="description" [(ngModel)]="bookForm.description" id="txtdescription">
+      </mat-form-field>
+    </div>
+
+    <button mat-button class="btn btn-primary" (click)="update()">Update</button>
+  </div>
+  

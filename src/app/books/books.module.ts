@@ -12,9 +12,8 @@ import { FormsModule } from '@angular/forms';
 import { EditComponent } from './edit/edit.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { MatCardModule } from '@angular/material/card';
-import { MatListModule } from '@angular/material/list';
 import { BookDetailsComponent } from './book-details/book-details.component';
+
 // import { MatDialogModule } from '@angular/material/dialog';
 // import { MatDialogRef } from '@angular/material/dialog';
 

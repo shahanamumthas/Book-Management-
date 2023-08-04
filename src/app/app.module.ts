@@ -14,7 +14,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { appReducer } from './shared/store/app.reducer';
 // import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
-import { MatDialogRef } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -27,7 +26,8 @@ import { MatDialogRef } from '@angular/material/dialog';
     MatIconModule,
     MatButtonModule,
     MatToolbarModule,
-    HttpClientModule,
+    HttpClientModule, 
+
     StoreModule.forRoot({myappstate : appReducer}),
     EffectsModule.forRoot([]),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() }),

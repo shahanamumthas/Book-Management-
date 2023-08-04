@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Store, select } from '@ngrx/store';
 import { selectBooks } from '../store/books.selector';
 import { invokeBooksAPI, invokeDeleteBookAPI } from '../store/books.action';
-import { deleteModel } from 'mongoose';
 import { selectAppState } from 'src/app/shared/store/app.selector';
 import { setAPIStatus } from 'src/app/shared/store/app.action';
 import { Appstate } from 'src/app/shared/store/appstate';
